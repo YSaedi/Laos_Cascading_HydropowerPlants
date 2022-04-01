@@ -1,9 +1,2 @@
-Template for the Read the Docs tutorial
-=======================================
-
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+# Cascading Hydropower Plants
+This documentation represents a sample of cascading hydropower plants using storage equations in OSeMOSYS. This project is part of designing an energy systems model with a representation of the cascading hydro facilities in Lao PDR.
