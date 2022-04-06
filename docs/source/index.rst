@@ -43,9 +43,9 @@ Storage
 This sample of cascading hydropower plants consists of two dames introduced as storage inside the model. Rivers and Hydropower Plants are modelled as Technology To Storage and Technology From Storage respectively. following information related to the storages are imported in order to model cascading hydropower plants using OSeMOSYS model.
 
 
-*	Dams are defined inside the STORAGE.
-*	Rivers are added as Technology To Storage.
-*	Hydropower Plants are  imported into the Technology From Storage folder.
+*	Dams are defined inside the **STORAGE**.
+*	Rivers are added as **Technology To Storage**.
+*	Hydropower Plants are  imported into the **Technology From Storage** folder.
 *	Capital cost of storage 
 *	Operational life of storage
 *   Minimum storage Charge
