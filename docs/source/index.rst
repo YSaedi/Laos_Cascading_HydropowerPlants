@@ -3,7 +3,7 @@ Cascading Hydropower Plants in OSeMOSYS
 
 This documentation represents modelling cascading hydropower plants using OSeMOSYS, which is part of energy modelling with a representation of the cascading hydro facilities in Lao PDR. It is woth mentIn the following sections, required information to build this model is provided based on the available storage code in OSeMOSYS.
 
-    Note: `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/tree/master/src/>`_ includes storage equations that are essential to make relationships inside the cascading hydropower plant modelling.
+    Note: `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ includes storage equations that are essential to make relationships inside the cascading hydropower plant modelling.
 
 
 RES of Cascading Hydropower Plants
