@@ -1,3 +1,6 @@
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
+
 Cascading Hydropower Plants
 ------------------------------------
 
@@ -5,7 +8,7 @@ This documentation represents Modelling cascading hydropower plants using storag
 
 
 
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
