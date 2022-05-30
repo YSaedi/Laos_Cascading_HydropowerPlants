@@ -4,4 +4,4 @@ API
 .. autosummary::
    :toctree: generated
 
-   Cascading Hydropower Plants
+   Laos Cascading Hydropower Plants
