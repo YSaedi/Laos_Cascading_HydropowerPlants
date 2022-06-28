@@ -21,9 +21,9 @@ The Reference Energy System (RES) of the developed model simplifies the complexi
 .. figure:: Figure1.jpg
     :alt: alternate text
     :figclass: align-center
-
-    Figure 1: Reference Energy System of Laos Cascading Hydropower Plants
-
+    
+Figure 1: Reference Energy System of Laos Cascading Hydropower Plants
+              
 
 Sets
 ----------------------------------------------------------------------
