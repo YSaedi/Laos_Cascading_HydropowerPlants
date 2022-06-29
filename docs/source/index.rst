@@ -24,7 +24,6 @@ The Reference Energy System (RES) of the developed model simplifies the complexi
     
 Figure 1: Reference Energy System of Laos Cascading Hydropower Plants 
 
-
               
 
 Sets
@@ -114,7 +113,7 @@ Parameters
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | CapacityToActivityUnit                                 | It represents the conversion factor to generate energy when one unit of capacity is fully used for one year. In Laos project, energy and capacity are measured in PJ and GW respectively and the conversion parameter would have a value of 31.536. More details are provided in Equation 1. |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
-| OutputActivityRatio                                    | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity connected dam ( in billion cubic meters), and head of the dam (meters).                      |
+| OutputActivityRatio                                    | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity of connected dam ( in billion cubic meters), and head of the dam (meters), Equation 2.       |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | CapitalCost                                            | It represents the capital cost of investment in new hydropower plants per unit of capacity in a certain year.                                                                                                                                                                                |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
@@ -123,6 +122,35 @@ Parameters
 | TotalAnnualMaxCapacity                                 | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity connected dam ( in billion cubic meters), and head of the dam (meters).                      |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 
+
+
+.. figure:: Equation1.jpg
+    :alt: alternate text
+    :figclass: align-center
+    
+    Equation 1: Calculating capacity to activity unit 
+
++-----------------------------------------------------+
+| Equation 2 : Calculating Capacity to Activity Unit  |
++-----------------------------------------------------+
+|    1 GW * 8760 hours per year= 8760 GWh per year    |
+|                                                     |
+|    8760 GWh per year * 0.0036 = 31.356 PJ per year  |
+|                                                     |
++-----------------------------------------------------+
+
+ 
+
+Equation 2 : Calculationg Output Activity Ratio      |
+
+                 j=v.g.h.η.ρ                          |
+ *P is the power output, measured in Watts            |
+ *η is the efficiency of the turbine, considered 85%  |
+| *ρ is the density of water, taken as 998 kg/m³       |
+| *g is the acceleration of gravity, equal to 9.81 m/s²|
+| *h is the head of the certain dam                    |
+| *v is the capacity of each dam, calculated in BCM    | 
++------------------------------------------------------+
 
 License
 ------------------------------------------------
