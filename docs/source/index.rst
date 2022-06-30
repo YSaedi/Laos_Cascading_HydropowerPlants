@@ -138,6 +138,7 @@ Parameters
 +------------------------------------------------------+
 |**j=v.g.h.η.ρ**                                       |
 |                                                      |
+|                                                      |
 | P is the power output, measured in Watts             |
 |                                                      |
 | η is the efficiency of the turbine, considered 85%   |
