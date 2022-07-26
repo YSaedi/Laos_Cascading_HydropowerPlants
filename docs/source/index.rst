@@ -115,6 +115,19 @@ Equation 1 : Calculating Capacity to Activity Unit
  *   1 GW 8760 hours per year= 8760 GWh per year 
  *   8760 GWh per year * 0.0036 = 31.356 PJ per year
  
+ +--------------------------------------+
+ | Example of Capacity to Activity Unit |
+ +---------+-------------+--------------+
+ | REGION  | TECHNOLOGY  |    VALUE     |
+ +=========+=============+==============+
+ | REGION1 | PWRHYDA01   |    31.536    |
+ +---------+-------------+--------------+
+ 
+
+
+ 
+ 
+ 
 
 Equation 2 : Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
  *   P represents power output, measured in Watts
