@@ -111,35 +111,35 @@ Parameters
 | TotalAnnualMaxCapacity                                 | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity connected dam ( in billion cubic meters), and head of the dam (meters).                      |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 
+Equation 1 : Calculating Capacity to Activity Unit
+ *   1 GW 8760 hours per year= 8760 GWh per year 
+ *   8760 GWh per year * 0.0036 = 31.356 PJ per year
+ 
 
-+-----------------------------------------------------+
-| Equation 1 : Calculating Capacity to Activity Unit  |
-+-----------------------------------------------------+
-|    1 GW * 8760 hours per year= 8760 GWh per year    |
-|                                                     |
-|    8760 GWh per year * 0.0036 = 31.356 PJ per year  |
-|                                                     |
-+-----------------------------------------------------+
+Equation 2 : Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
+ *   P represents power output, measured in Watts
+ *   η is the efficiency of the turbine, considered 85%
+ *   ρ is the density of water, taken as 998 kg/m³
+ *   g is the acceleration of gravity, equal to 9.81 m/s²
+ *   h is the head of the certain dam
+ *   v is the capacity of each dam, calculated in BCM
 
  
-+------------------------------------------------------+
-|Equation 2 : Calculationg Output Activity Ratio       |
-+------------------------------------------------------+
-|**j=v.g.h.η.ρ**                                       |
-|                                                      |
-|                                                      |
-| P is the power output, measured in Watts             |
-|                                                      |
-| η is the efficiency of the turbine, considered 85%   |
-|                                                      |
-| ρ is the density of water, taken as 998 kg/m³        |
-|                                                      |
-| g is the acceleration of gravity, equal to 9.81 m/s² |
-|                                                      |
-| h is the head of the certain dam                     |
-|                                                      |
-| v is the capacity of each dam, calculated in BCM     | 
-+------------------------------------------------------+
+
+
+
+
+Modelling Laos Cascade Hydropower plant in OSeMOSYS 
+========================================================
+The Laos Cascade HPP is modelled using Clewsy, developed by Taco Niet and Abhishek Shivakumar. This software package allows analysts to build and scale-up CLEWs and OSeMOSYS models much faster and more reliable than the manual entry process. Clewsy is written in Python 3 and uses pyyaml for reading core model structure file including the main structure of the OSeMOSYS model. The following steps explain the process of building cascading hydropower plants model.
+
+This model is developed based on the `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ incluing storage equations that are proper to make relationships inside the cascading HPP model.
+
+
+
+
+
+
 
 License
 ------------------------------------------------
