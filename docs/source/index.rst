@@ -131,12 +131,56 @@ Equation 2 : Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
 
 Modelling Laos Cascade Hydropower plant in OSeMOSYS 
 ========================================================
+
+OSeMOSYS
+------------------------------------------------------
+This model is developed based on the `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ incluing storage equations that are proper to make relationships inside the cascading HPP model
+
+Clewsy
+------------------------------------------------------
 The Laos Cascade HPP is modelled using Clewsy, developed by Taco Niet and Abhishek Shivakumar. This software package allows analysts to build and scale-up CLEWs and OSeMOSYS models much faster and more reliable than the manual entry process. Clewsy is written in Python 3 and uses pyyaml for reading core model structure file including the main structure of the OSeMOSYS model. The following steps explain the process of building cascading hydropower plants model.
 
-This model is developed based on the `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ incluing storage equations that are proper to make relationships inside the cascading HPP model.
+Clewsy as a command-line interface reads the model structure from the input yaml file and generates results as a folder of CSV files. Install clewsy using pip:
+    
+.. code-block:: console
 
+    $ pip install clewsy
 
+After installing the clewsy package call it in the command prompt:
 
+.. code-block:: console
+
+    $ clewsy build <Input.yaml>
+    
+Otoole
+-----------------------------------------------------------
+Otoole, a command-line tool written in python, supports data pre-processing conversions.  In this study, Otoole is called to convert output CSV files into a text file in order to process OSeMOSYS modelling. Call the following command:
+
+.. code-block:: console
+
+    $ otoole convert csv datafile otoole_output datafile.txt
+    
+Note: corrections need to be done before starting optimization:
+ *   Remove following lines from datafile.txt:
+      1. param default 0 : StorageLevelStart :=;
+      2. param default 0.05 : DiscountRateStorage :=;
+            
+ *   Add the following line to the datafile.txt:
+      param default 9999999 : StorageMaxCapacity :=;
+       
+ *   Change default value (-1) to 9999999:
+      1.  AnnualEmissionLimit
+      2.  ModelPeriodEmissionLimit
+      3.  TotalAnnualMaxCapacity
+      4.  TotalAnnualMaxCapacityInvestment
+      5.  TotalTechnologyAnnualActivityUpperLimit
+      6.  TotalTechnologyModelPeriodActivityUpperLimit
+
+        
+        
+        
+        
+    
 
 
 
