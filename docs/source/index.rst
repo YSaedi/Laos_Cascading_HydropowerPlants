@@ -111,7 +111,9 @@ Parameters
 | TotalAnnualMaxCapacity                                 | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity connected dam ( in billion cubic meters), and head of the dam (meters).                      |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 
-Equation 1 : Calculating Capacity to Activity Unit
+Equation 1
+..........................................
+Calculating Capacity to Activity Unit
  *   1 GW 8760 hours per year= 8760 GWh per year 
  *   8760 GWh per year * 0.0036 = 31.356 PJ per year
  
@@ -125,11 +127,9 @@ Equation 1 : Calculating Capacity to Activity Unit
  
 
 
- 
- 
- 
-
-Equation 2 : Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
+Equation 2 
+............................................
+Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
  *   P represents power output, measured in Watts
  *   η is the efficiency of the turbine, considered 85%
  *   ρ is the density of water, taken as 998 kg/m³
@@ -137,16 +137,22 @@ Equation 2 : Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
  *   h is the head of the certain dam
  *   v is the capacity of each dam, calculated in BCM
 
+ 
 
 .. figure:: Figure2.png
-    :width: 600
+    :width: 700
     :alt: alternate text
     :figclass: align-center
     
     
- 
-
-
++---------------------------------------------------------------------+
+|   Example of Output Activity Ratio                                  |
++---------+------------+--------+-------------------+-------+---------+
+| REGION  | TECHNOLOGY |  FUEL  | MODE_OF_OPERATION | YEAR  |  VALUE  |
++=========+============+========+===================+=======+=========+
+| REGION1 | PWRHYDA06  | ELCA01 |         1         | 2030  | 0.898   |
++---------+------------+--------+-------------------+-------+---------+          
+    
 
 
 Modelling Laos Cascade Hydropower plant in OSeMOSYS 
@@ -208,7 +214,6 @@ The latest version of GLPSOL (GNU- Linear programming solver) containing the GLP
 
 
         
-    
 
 
 
