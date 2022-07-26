@@ -137,6 +137,12 @@ Equation 2 : Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
  *   h is the head of the certain dam
  *   v is the capacity of each dam, calculated in BCM
 
+
+.. figure:: Figure2.jpg
+    :alt: alternate text
+    :figclass: align-center
+    
+    
  
 
 
