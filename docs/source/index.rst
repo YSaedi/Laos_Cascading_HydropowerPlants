@@ -144,13 +144,13 @@ Clewsy as a command-line interface reads the model structure from the input yaml
     
 .. code-block:: console
 
-    $ pip install clewsy
+     pip install clewsy
 
 After installing the clewsy package call it in the command prompt:
 
 .. code-block:: console
 
-    $ clewsy build <Input.yaml>
+     clewsy build <Input.yaml>
     
 Otoole
 -----------------------------------------------------------
@@ -158,7 +158,7 @@ Otoole, a command-line tool written in python, supports data pre-processing conv
 
 .. code-block:: console
 
-    $ otoole convert csv datafile otoole_output datafile.txt
+     otoole convert csv datafile otoole_output datafile.txt
     
 Note: corrections need to be done before starting optimization:
  *   Remove following lines from datafile.txt:
@@ -178,7 +178,15 @@ Note: corrections need to be done before starting optimization:
 
         
         
-        
+Optimization
+----------------------------------------
+The latest version of GLPSOL (GNU- Linear programming solver) containing the GLPSOL solver is used to implement optimization.  At first, it combines the OSeMOSYS model and data file into an ‘lp’ file and then performs the optimization to find the optimum solution. Run the model by typing the following line in the command prompt: 
+
+.. code-block:: console
+
+      glpsol -m osemosys.txt -d datafile.txt
+
+
         
     
 
