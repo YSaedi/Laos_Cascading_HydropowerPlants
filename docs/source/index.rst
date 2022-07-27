@@ -36,7 +36,7 @@ Sets
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | SEASON                                                 | It symbolizes the number of seasons in one year which is two seasons in the Laos model. There is a dry season named Season 1 (from October to April ) and a wet season defined as Season 2 (between May and September). Seasons are indexed as “ls”.                                         |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
-| TIMESLICE                                              | Based on the seasonal characteristics, there are two main seasons and each one is classified into three categories. Therefore, there are a total of 6 TIMESLICEs: Season1 baseload, Season 1 intermediate, Season 1 peak, Season2 baseload, Season 2 intermediate, and Season 2 peak.        |
+| TIMESLICE                                              | Based on the seasonal characteristics, there are two main seasons and each one is classified into three categories. Therefore, there are a total of 6 TIMESLICEs: Season1 baseload, Season 1 intermediate, Season 1 peak, Season2 baseload, Season 2 intermediate, and Season 2 peak(Table 1)|
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 
 
@@ -94,7 +94,7 @@ Parameters
 +--------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Name**                                               | **Description**                                                                                                                                                                                                                                                                              |
 +========================================================+==============================================================================================================================================================================================================================================================================================+
-| YearSplit                                              | Year split specifies the share of each time slice in a year. The parameters of year splits are shown in Table 1.                                                                                                                                                                             |
+| YearSplit                                              | Year split specifies the share of each time slice in a year. The parameters of year splits are shown in Table 2.                                                                                                                                                                             |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | SpecifiedAnnualDemand                                  | It represents the total energy demand of a certain year in PJ.                                                                                                                                                                                                                               |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
@@ -113,6 +113,74 @@ Parameters
 | TotalAnnualMaxCapacity                                 | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity connected dam ( in billion cubic meters), and head of the dam (meters).                      |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 
++----------------------------------+
+| Table 1                          |
++-----------+----------------------+
+| TIMESLICE |   Description        | 
++===========+======================+
+| 1         | Season 1 baseload    |
++-----------+----------------------+
+| 2         | Season 1 intermediate|
++-----------+----------------------+
+| 3         | Season 1 peak        |
++-----------+----------------------+
+| 4         | Season 2 baseload    |
++-----------+----------------------+
+| 5         | Season 2 intermediate|
++-----------+----------------------+
+| 6         | Season 2 peak        |
++-----------+----------------------+
+
++-----------------------------+
+| Table 2: YearSplit          |
++-----------+--------+--------+
+| TIMESLICE |  YEAR  |  Value | 
++===========+========+========+
+| 1         |  2030  |  0.125 |
++-----------+--------+--------+
+| 2         |  2023  |  0.25  |
++-----------+--------+--------+
+| 3         |  2023  |  0.25  |
++-----------+--------+--------+
+| 4         |  2023  |  0.125 |
++-----------+--------+--------+
+| 5         |  2023  | 0.125  |
++-----------+--------+--------+
+| 6         |  2023  | 0.125  |
++-----------+--------+--------+
+
+
+
+
+TIMESLICE	YEAR	VALUE.      
+1	2020	0.125
+2	2020	0.25
+3	2020	0.25
+4	2020	0.125
+5	2020	0.125
+6	2020	0.125
+
+REGION	FUEL	TIMESLICE	YEAR	VALUE
+REGION1	ELCA02	     1	   2020	    0.2
+REGION1	ELCA02	   1	   2021	    0.2
+
+
+REGION	TECHNOLOGY	TIMESLICE	YEAR	VALUE
+REGION1	Rain007	1	2020	0.05
+REGION1	Rain007	2	2020	0.05
+REGION1	Rain007	3	2020	0.1
+REGION1	Rain007	4	2020	0.2
+REGION1	Rain007	5	2020	0.2
+REGION1	Rain007	6	2020	0.4
+
+
+Time slices	Year split	Specified Annual Profile	Capacity Factor, Rain
+1:Season1 baseload	0.125                       	0.2	0.05
+2:Season 1 intermediate	0.25                       	0.2	0.05
+3:Season 1 peak	0.25                              	0.2	0.1
+4:Season2 baseload	0.125                       	0.1	0.2
+5:Season 2 intermediate	0.125                       	0.2	0.2
+6:Season 2 peak	0.125                              	0.1	0.4
 
 
 
@@ -124,11 +192,11 @@ Calculating Capacity to Activity Unit
  
  +-----------------------------------------------+
  | Table 2: Example of Capacity to Activity Unit |
- +-------------+------------------+--------------+
- | REGION      | TECHNOLOGY       | VALUE        |
- +=============+==================+==============+
- |   REGION1   |   PWRHYDA01      |   31.536     |
- +-------------+------------------+--------------+
+ +--------+----------------------------+---------+
+ | REGION |        TECHNOLOGY          | VALUE   |
+ +========+============================+=========+
+ | REGION1|        PWRHYDA01           | 31.536  |
+ +--------+----------------------------+---------+
  
 
 
@@ -191,7 +259,7 @@ Otoole, a command-line tool written in python, supports data pre-processing conv
 
      otoole convert csv datafile otoole_output datafile.txt
     
-Note: corrections need to be done before starting optimization:
+Note: Following corrections need to be implemented before starting optimization:
  *   Remove following lines from datafile.txt:
       1. param default 0 : StorageLevelStart :=;
       2. param default 0.05 : DiscountRateStorage :=;
