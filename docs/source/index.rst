@@ -239,7 +239,7 @@ Modelling Laos Cascade Hydropower plant in OSeMOSYS
 The Cascade hydropower plant model is generated based on reference energy system, temporal representation, power system specification, and clustered land productivity data. Adapting Clewsy provides the opportunity to structure the core model without time consuming manual data entry generating. Following sections explain steps of building cascading hydropower plants model (Figure 2)
 
 .. figure:: Figure3.png
-    :width: 700
+    :width: 320
     :alt: alternate text
     :figclass: align-center
     
