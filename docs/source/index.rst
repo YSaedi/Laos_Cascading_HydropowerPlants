@@ -108,7 +108,7 @@ Parameters
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | CapitalCost                                            | It represents the capital cost of investment in new hydropower plants per unit of capacity in a certain year. Hydropower plant 7 is considered the potential energy facility in this model.                                                                                                  |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
-| CapacityFactor                                         | It represents the capacity available for each TimeSlice in a certain year. The capacity factor of the Rain technology is calculated based on the annual precipitation in a specific region (Table 3).                                                                                        |
+| CapacityFactor                                         | It represents the capacity available for each TimeSlice in a certain year. The capacity factor of the Rain technology is calculated based on the annual precipitation in a specific region (Table 4).                                                                                        |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
 | TotalAnnualMaxCapacity                                 | The output activity ratio of a certain hydropower plant is calculated based on the efficiency of turbines (considered 85%), the density of water (998 kg/m³), gravity (9.81 m/s²), the capacity connected dam ( in billion cubic meters), and head of the dam (meters).                      |
 +--------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
@@ -168,7 +168,7 @@ Parameters
 +---------+---------+------------+------+-------+
 
 +------------------------------------------------+
-| Table 3: CapacityFactor                        |
+| Table 4: CapacityFactor                        |
 +---------+----------+------------+------+-------+
 | REGION  |TECHNOLOGY|  TIMESLICE | YEAR | VALUE |
 +=========+==========+============+======+=======+
