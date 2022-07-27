@@ -132,7 +132,7 @@ Parameters
 +-----------+----------------------+
 
 +-----------------------------+
-| Table 2: YearSplit          |
+| Table 2: YearSplit in 2030  |
 +-----------+--------+--------+
 | TIMESLICE |  YEAR  |  Value | 
 +===========+========+========+
@@ -150,7 +150,7 @@ Parameters
 +-----------+--------+--------+
 
 +-----------------------------------------------+
-| Table 3: SpecifiedDemandProfile               |
+| Table 3: SpecifiedDemandProfile in 2030       |
 +---------+---------+------------+------+-------+
 | REGION  |  FUEL   |  TIMESLICE | YEAR | VALUE |
 +=========+=========+============+======+=======+
@@ -168,7 +168,7 @@ Parameters
 +---------+---------+------------+------+-------+
 
 +------------------------------------------------+
-| Table 4: CapacityFactor                        |
+| Table 4: CapacityFactor in 2030                |
 +---------+----------+------------+------+-------+
 | REGION  |TECHNOLOGY|  TIMESLICE | YEAR | VALUE |
 +=========+==========+============+======+=======+
@@ -193,7 +193,7 @@ Calculating Capacity to Activity Unit
  *   8760 GWh per year * 0.0036 = 31.356 PJ per year
  
  +-----------------------------------------------+
- | Example of Capacity to Activity Unit |
+ | Capacity to Activity Unit of hydropower plant |
  +--------+----------------------------+---------+
  | REGION |        TECHNOLOGY          | VALUE   |
  +========+============================+=========+
@@ -221,7 +221,7 @@ Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
     
     
 +---------------------------------------------------------------------+
-|   Example of Output Activity Ratio                                  |
+| Output Activity Ratio of Hydropower Plant 6                         |
 +---------+------------+--------+-------------------+-------+---------+
 | REGION  | TECHNOLOGY |  FUEL  | MODE_OF_OPERATION | YEAR  |  VALUE  |
 +=========+============+========+===================+=======+=========+
