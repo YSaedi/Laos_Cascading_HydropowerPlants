@@ -193,7 +193,7 @@ Calculating Capacity to Activity Unit
  *   8760 GWh per year * 0.0036 = 31.356 PJ per year
  
  +-----------------------------------------------+
- | Table 2: Example of Capacity to Activity Unit |
+ | Example of Capacity to Activity Unit |
  +--------+----------------------------+---------+
  | REGION |        TECHNOLOGY          | VALUE   |
  +========+============================+=========+
