@@ -236,14 +236,21 @@ Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
 
 Modelling Laos Cascade Hydropower plant in OSeMOSYS 
 ========================================================
-The Cascade hydropower plant model is generated based on reference energy system, temporal representation, power system specification, and clustered land productivity data. Adapting Clewsy provides the opportunity to structure the core model without time consuming manual data entry generating. Following sections explain steps of building cascading hydropower plants model (Figure 2)
+The Cascade hydropower plant model is generated based on reference energy system, temporal representation, power system specification, and clustered land productivity data. Adapting Clewsy provides the opportunity to structure the core model without time consuming manual data entry generating. Following sections explain steps of building cascading hydropower plants model (Figure 2).
 
-.. figure:: Figure3.png
+
+
+
+.. figure:: Picture3.jpg
     :width: 400
     :alt: alternate text
     :figclass: align-center
     
 Figure 2: Flowchart of developing cascade hydropower plant model 
+
+
+
+
 
 
 
