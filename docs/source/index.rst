@@ -242,7 +242,7 @@ The Cascade hydropower plant model is generated based on reference energy system
 
 
 .. figure:: Picture3.jpg
-    :width: 400
+    :width: 500
     :alt: alternate text
     :figclass: align-center
     
