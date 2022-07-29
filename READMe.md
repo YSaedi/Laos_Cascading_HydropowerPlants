@@ -4,7 +4,8 @@
 Laos Cascading Hydropower Plants
 ------------------------------------
 
-This documentation represents cascading hydropower plants model including seven cascade HPPs on Nam Ou rive in Lao PDR. Storage equations provided in OSeMOSYS_2017_11_08 are used to provide connection between dams and hydro power plants.
+This documentation represents energy model of seven cascade HPPs on Nam Ou rive in Lao PDR. Storage equations provided in OSeMOSYS_2017_11_08 are used to provide connection between dams and hydro power plants.![image](https://user-images.githubusercontent.com/96505832/181802218-60814e28-903b-44ef-9cb5-b61fd547fa7a.png)
+
 
 
 
