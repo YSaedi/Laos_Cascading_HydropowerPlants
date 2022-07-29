@@ -22,7 +22,7 @@ Reference Energy System of Cascading Hydropower Plants
 The Reference Energy System (RES) of the developed model simplifies the complexity of the generation of hydroelectricity from seven cascading hydropower plants located on one river, illustrated in Figure 1. The first six dams and hydropower plants already exist and are active, and it is assumed the Nam Ou 7 including the dam and hydropower plant number 7 are the potential hydroelectric system which is planned to be built in order to address domestic and export electricity demand. It consists of technologies, energy carriers, fuels, and various levels of energy in the supply-demand chain. RES starts with Rain technology on the left side of the chain connected to the River Water. All required components of RES to model cascading hydropower plants are represented below:
 
 
-.. figure:: Figure1.jpg
+.. figure:: Figure1.png
     :alt: alternate text
     :figclass: align-center
     
