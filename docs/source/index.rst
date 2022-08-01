@@ -194,7 +194,7 @@ Equation 1
 ..........................................
 Calculating Capacity to Activity Unit
  *   1 GW 8760 hours per year= 8760 GWh per year 
- *   8760 GWh per year * 0.0036 = 31.356 PJ per year
+ *   8760 GWh per year * 0.0036 = 31.536 PJ per year
  
  +-----------------------------------------------+
  | Capacity to Activity Unit of hydropower plant |
