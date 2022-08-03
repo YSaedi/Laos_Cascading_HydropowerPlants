@@ -209,7 +209,7 @@ Calculating Capacity to Activity Unit
 Equation 2 
 ............................................
 Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
- *   P represents power output, measured in Watts
+ *   P represents power output, measured in Watts ( Watt = 1 Joule per second (1W = 1 J/s) )
  *   η is the efficiency of the turbine, considered 85%
  *   ρ is the density of water, taken as 998 kg/m³
  *   g is the acceleration of gravity, equal to 9.81 m/s²
