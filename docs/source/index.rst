@@ -218,7 +218,7 @@ Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
 
  
 
-.. figure:: figure 2.png
+.. figure:: Figure2.png
     :width: 700
     :alt: alternate text
     :figclass: align-center
