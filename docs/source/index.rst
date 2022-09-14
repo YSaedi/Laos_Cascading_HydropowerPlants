@@ -13,7 +13,7 @@ This model is developed with the aim of integrating into Laos national-scale ene
 
 Structure of Model
 ====================================
-In the following sections, a detailed explanation of open-source tools, instructions and information to model the cascade hydropower system are provided.
+In the following sections, a detailed explanation of required open-source tools, instructions and information 
 
     Note: `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ includes storage equations that are proper to make relationships inside the cascading hydropower plant modelling.
 
