@@ -11,6 +11,16 @@ Cascade Hydropower Plant Model is applied to Lao PDR, one of the richest countri
 This model is developed with the aim of integrating into Laos national-scale energy model to enable policy makers analyze various scenarios and practices to plan long-term development and investment. This study includes seven cascade hydropower facilities on the Nam Ou river with a total installed capacity of 1,272,000 kW, annual average generating capacity of 5 billion kW.
 
 
+
+.. figure:: Figure5.png
+    :alt: alternate text
+    :figclass: align-center
+    
+The Nam Ou Cascade Hydropower plants (`The Third Pole <https://www.thethirdpole.net/en//>`_) 
+
+
+
+
 Structure of Model
 ====================================
 The primary objective of this documentation is to provide meaningful, essential, and specific information on cascade hydropower plant energy modelling. Random data are used to describe the system and explain the procedure of developing this model based on OSeMOSYS, which provides users with an opportunity to create energy models regardless of geographical location and the complexity of the cascaded HPPs. The source code, design documents, and test sample are available on `GitHub <https://github.com/YSaedi/Laos_Cascading_HydropowerPlants/>`_ with the aim of encouraging open collaboration.
