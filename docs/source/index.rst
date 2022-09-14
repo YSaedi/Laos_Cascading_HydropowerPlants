@@ -12,11 +12,17 @@ This model is developed with the aim of integrating into Laos national-scale ene
 
 
 
-.. figure:: Figure5.png
+.. figure:: Figure4.png
+    :width: 700
     :alt: alternate text
     :figclass: align-center
     
 The Nam Ou Cascade Hydropower plants (`The Third Pole <https://www.thethirdpole.net/en//>`_) 
+
+
+
+
+
 
 
 
