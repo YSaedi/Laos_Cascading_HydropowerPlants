@@ -25,7 +25,7 @@ The Nam Ou Cascade Hydropower plants (`The Third Pole <https://www.thethirdpole.
 
 Structure of Model
 ====================================
-The primary objective of this documentation is to provide meaningful, essential, and specific information on cascade hydropower plant energy modelling. Random data are used to describe the system and explain the procedure of developing this model based on OSeMOSYS, which provides users with an opportunity to create energy models regardless of geographical location and the complexity of the cascaded HPPs. The source code, design documents, and test sample are available on `GitHub <https://github.com/YSaedi/Laos_Cascading_HydropowerPlants/>`_ with the aim of encouraging open collaboration.
+The primary objective of this documentation is to provide meaningful, essential, and specific information on cascade hydropower plant energy modelling. Open data and random input are used to describe the system and explain the procedure of developing this model based on OSeMOSYS, which provides users with an opportunity to create energy models regardless of geographical location and the complexity of the cascaded HPPs. The source code, design documents, and test sample are available on `GitHub <https://github.com/YSaedi/Laos_Cascading_HydropowerPlants/>`_ with the aim of encouraging open collaboration.
 In the following sections, a detailed explanation of required open-source tools, instructions and information are presented. 
 
     Note: `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ includes storage equations that are proper to make relationships inside the cascading hydropower plant modelling.
