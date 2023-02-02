@@ -231,7 +231,7 @@ Calculationg Output Activity Ratio (**j=v.g.h.η.ρ**)
 
 Modelling Laos Cascade Hydropower plant in OSeMOSYS 
 ========================================================
-The Cascade hydropower plant model is generated based on reference energy system, temporal representation, power system specification, and clustered land productivity data. Adapting Clewsy provides the opportunity to structure the core model without time consuming manual data entry generating. Following sections explain steps of building cascading hydropower plants model (Figure 2).
+The Cascade hydropower plant model is generated based on reference energy system, temporal representation, power system specification, and clustered land productivity data. Adapting clewsy provides the opportunity to structure the core model without time consuming manual data entry generating. Following sections explain steps of building cascading hydropower plants model (Figure 2).
 
 
 
@@ -253,11 +253,11 @@ OSeMOSYS
 ------------------------------------------------------
 This model is developed based on the `OSeMOSYS_2017_11_08 <https://github.com/OSeMOSYS/OSeMOSYS_GNU_MathProg/blob/AlternateStorageCode/src/osemosys_short.txt/>`_ incluing storage equations that are proper to make relationships inside the cascading HPP model
 
-Clewsy
+clewsy
 ------------------------------------------------------
-The Laos Cascade HPP is modelled using Clewsy, developed by Taco Niet and Abhishek Shivakumar. This software package allows analysts to build and scale-up CLEWs and OSeMOSYS models much faster and more reliable than the manual entry process. Clewsy is written in Python 3 and uses pyyaml for reading core model structure file including the main structure of the OSeMOSYS model. The following steps explain the process of building cascading hydropower plants model.
+The Laos Cascade HPP is modelled using clewsy, developed by Taco Niet and Abhishek Shivakumar. This software package allows analysts to build and scale-up CLEWs and OSeMOSYS models much faster and more reliable than the manual entry process. clewsy is written in Python 3 and uses pyyaml for reading core model structure file including the main structure of the OSeMOSYS model. The following steps explain the process of building cascading hydropower plants model.
 
-Clewsy as a command-line interface reads the model structure from the input yaml file and generates results as a folder of CSV files. Install clewsy using pip:
+clewsy as a command-line interface reads the model structure from the input yaml file and generates results as a folder of CSV files. Install clewsy using pip:
     
 .. code-block:: console
 
