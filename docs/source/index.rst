@@ -310,6 +310,12 @@ The latest version of GLPSOL (GNU- Linear programming solver) containing the GLP
 
 
 
+Contact us
+------------------------------------------------
+E-mail: yalda_saedi@sfu.ca 
+
+
+
 License
 ------------------------------------------------
 This work is licensed under a `Creative Commons Attribution 4.0 International License <http://creativecommons.org/licenses/by/4.0/>`_.
